@@ -1,11 +1,11 @@
 {
-  "name": "font native",
+  "name": "native",
   "description": "Native Font Development...",
   "version": "1.0.0",
   "homepage": "https://github.com/ar-insect/native",
   "author": {
     "name": "'ar-insect'",
-    "email": "ar.insect@gmail.com"
+    "email": "'ar.insect@gmail.com'"
   },
   "repository": {
     "type": "git",
