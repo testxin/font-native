@@ -1,0 +1,73 @@
+{
+  "name": "font native",
+  "description": "Native Font Development...",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ar-insect/native",
+  "author": {
+    "name": "'ar-insect'",
+    "email": "ar.insect@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ar-insect/native.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ar-insect/native/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "main": "",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "alias": {
+    "$": "$",
+    "select": "select/1.0.0/select",
+    "cellula": "cellula/0.4.2/cellula",
+    "fdp": "fdp/1.0.0/fdp",
+    "fdp_1_1_0": "fdp/1.1.0/fdp",
+    "mockAsyn": "mockAsyn/1.0.0/mockAsyn",
+    "money": "money/1.0.0/money",
+    "zeroclipboard": "gallery/zeroclipboard/1.3.5/zeroclipboard",
+    "customMenu": "customMenu/1.0.0/customMenu",
+    "tinyscrollbar": "tinyscrollbar/1.0.0/tinyscrollbar",
+    "handlebars_1_0_0": "gallery/handlebars/1.0.0/handlebars",
+    "handlebars": "gallery/handlebars/1.0.2/handlebars",
+    "popup": "arale/popup/1.1.6/popup",
+    "deleter": "alipay/deleter/1.0.0/deleter",
+    "dialog": "arale/dialog/1.2.6/dialog",
+    "calendar": "arale/calendar/1.0.0/calendar",
+    "placeholders": "gallery/placeholders/3.0.2/placeholders",
+    "atip"    : "arale/tip/1.0.0/atip",
+    "tip"  : "arale/tip/1.0.0/tip",
+    "overlay": "arale/overlay/1.0.0/overlay",
+    "iframe-shim": "arale/iframe-shim/1.0.0/iframe-shim",
+    "widget": "arale/widget/1.0.3/widget",
+    "templatable": "arale/widget/1.0.3/templatable"
+  },
+  "devDependencies": {
+    "express": "3.x",
+    "jade": "*",
+    "lodash": "^2.4.1",
+    "velocityjs":"0.4.6",
+    "velocity": "0.7.1",
+    "grunt": "^0.4.5",
+    "grunt-cmd-concat": "^0.2.7",
+    "grunt-cmd-transport": "^0.4.1",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.9.0",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.0"
+  },
+  "keywords": []
+}

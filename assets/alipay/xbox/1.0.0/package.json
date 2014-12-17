@@ -1,0 +1,24 @@
+{
+    "name": "xbox",
+    "version": "1.0.0",
+    "description": "xbox 是具有支付宝特色的通用弹出层。",
+    "family": "alipay",
+    "homepage": "http://arale2.alipay.im/xbox",    
+    "repository": {
+        "type": "git",
+        "url": "http://git.alipay.im/alipay_xbox"
+    },
+    "bugs": {
+        "url": "http://git.alipay.im/alipay_xbox/issues"        
+    },
+    "spm": {
+    "output": [
+        "xbox.js"
+    ],
+    "alias": {
+        "$": "$",
+        "object-shim": "alipay/object-shim/1.0.0/object-shim",
+        "dialog": "arale/dialog/1.0.0/dialog"
+    }
+    }
+}

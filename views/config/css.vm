@@ -1,0 +1,31 @@
+## global css
+#set($css_global_file = {
+	"global": "global/1.0.0/global.css"
+})
+#foreach($item in $css_global_file.entrySet())
+    <link charset="utf-8" rel="stylesheet" href="/assets/$item.value" media="all" />
+#end
+
+##page css
+#set($css_file = {
+	"mytest": {
+		"index": {
+		
+		}
+	}
+})
+#foreach($item in $css_file.entrySet())
+	#if($__key)
+		#if($item.key == $__key.split('/').get(0))
+			## current module
+    		#foreach($item2 in $item.value.entrySet())
+    			#if($__key.split('/').get(1) != $item2.key)<link charset="utf-8" rel="stylesheet" href="/assets/$item2.value" media="all" />#end
+				#if($__key.split('/').get(1) == $item2.key)
+					#foreach($item3 in $item2.value.entrySet())
+						<link charset="utf-8" rel="stylesheet" href="/assets/$item3.value" media="all" />
+					#end
+				#end
+    		#end
+		#end
+	#end
+#end

@@ -1,0 +1,97 @@
+/* alipay.tinyscrollbar style module */
+
+.tiny-scrollbar-area {
+    overflow: hidden !important;
+    position: relative;
+    clear: both;
+}
+
+.tiny-scrollbar-area .viewport {
+    overflow: hidden;
+    position: absolute;
+}
+
+.tiny-scrollbar-area .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.tiny-scrollbar-area .scrollbar {
+    z-index: 1;
+    background: transparent;
+    position: relative;
+    float: right;
+    width: 8px;
+}
+
+.tiny-scrollbar-area .track {
+    background: transparent;
+    height: 100%;
+    width: 8px;
+    position: relative;
+}
+
+.tiny-scrollbar-area .track:hover {
+    background: #eee;
+}
+
+.tiny-scrollbar-area .thumb {
+    background: #565656;
+    border-radius: 8px;
+    height: 20px;
+    width: 8px;
+    cursor: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.tiny-scrollbar-area .thumb .end {
+    background: #565656;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 5px;
+    width: 8px;
+}
+
+.tiny-scrollbar-area .disable {
+    display: none;
+}
+
+.noSelect {
+    -ms-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/*html, body {
+ scrollbar-arrow-color: #fff;
+ scrollbar-face-color: #565656;
+ scrollbar-darkshadow-color: #565656;
+ scrollbar-highlight-color: #565656;
+ scrollbar-3dlight-color: #565656;
+ scrollbar-shadow-color: #565656;
+ scrollbar-track-color: #f5f5f5;
+ }
+
+ .side-nav .item-details::-webkit-scrollbar {
+ width: 8px;
+ height: 8px;
+ }
+
+ .side-nav .item-details::-webkit-scrollbar-track {
+ background: #f5f5f5;
+ }
+
+ .side-nav .item-details::-webkit-scrollbar-thumb {
+ background: #565656;
+ border-radius: 8px;
+ }
+ */

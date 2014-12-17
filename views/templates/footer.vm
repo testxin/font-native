@@ -1,0 +1,8 @@
+##系统页脚
+#parse("../../public/component/footCommon.vm")
+</div>
+##配置js
+#parse('../config/js.vm')
+
+</body>
+</html>

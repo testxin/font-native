@@ -1,0 +1,31 @@
+## global js
+#set($js_global_file = {
+})
+#foreach($item in $js_global_file.entrySet())
+	<script charset="utf-8" src="/assets/$item.value"></script>
+#end
+
+##page js
+#set($js_file = {
+	"mytest": {
+		"test": "mytest/1.0.0/index.js",
+		"index": {
+			
+		}
+	}
+})
+#foreach($item in $js_file.entrySet())
+	#if($__key)
+		#if($item.key == $__key.split('/').get(0))
+			## current module
+    		#foreach($item2 in $item.value.entrySet())
+    			#if($__key.split('/').get(1) != $item2.key)<script charset="utf-8" src="/assets/$item2.value"></script>#end
+				#if($__key.split('/').get(1) == $item2.key)
+					#foreach($item3 in $item2.value.entrySet())
+						<script charset="utf-8" src="/assets/$item3.value"></script>
+					#end
+				#end
+    		#end
+		#end
+	#end
+#end

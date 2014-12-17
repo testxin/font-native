@@ -1,0 +1,11 @@
+#parse("/head.vm")
+##模板入口
+##set($key = $!__key.split('/').get(1))
+#if($!__key == 'mytest/index')
+    #parse("/mytest/index.vm")
+#else
+	##默认加载
+    #parse("/main.vm")
+#end
+
+#parse("/footer.vm")

@@ -1,0 +1,34 @@
+{
+  "family": "alipay",
+  "name": "object-shim",
+  "version": "1.0.1",
+  "description": "解决浮层被安全控件穿透的问题。",
+  "homepage": "http://arale.alipay.im/alipay/object-shim/",
+  "author": "贯高 <sakura9515@gmail.com>",
+  "maintainers": [
+    "贯高 <sakura9515@gmail.com>",
+    "乔花 <shengyan1985@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/alipay-js/object-shim"
+  },
+  "bugs": {
+    "url": "http://gitlab.alibaba-inc.com/alipay-js/object-shim/issues"
+  },
+  "license": "MIT",
+  "spm": {
+    "alias": {
+      "$": "$"
+    },
+    "output": [
+      "object-shim.js"
+    ]
+  },
+  "devDependencies": {
+    "nico": "*",
+    "mocha-browser": "*",
+    "jscoverage": "~0.3.7"
+  },
+  "tests": ["object-shim"]
+}

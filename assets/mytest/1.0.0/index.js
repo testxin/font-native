@@ -1,0 +1,1 @@
+define("mytest/1.0.0/index",[],function(){});

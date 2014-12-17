@@ -1,0 +1,36 @@
+#*
+@description: 系统头部
+*#
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="${charset}" />
+        <meta name="keywords" content="$!keywords" />
+        <meta name="description" content="$!description" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>$!{title}</title>
+        ## seajs配置本地化
+        <script charset="utf-8" type="text/javascript" src="/assets/sea.js"></script>
+        <script charset="utf-8" type="text/javascript" src="/assets/seajs-style/1.0.2/seajs-style.js"></script>
+        <script>
+            seajs && seajs.config({
+                base : '/assets',
+                /*paths: {
+                 assets: '/assets'
+                 },*/
+                alias : {
+                    '$' : '$'
+                },
+                charset : 'utf-8'
+            });
+        </script>
+        <script src="/assets/$.js"></script>
+    	##配置css
+		#parse('../config/css.vm')
+    </head>
+    <!--[if lt IE 7]><body class="ie6"><![endif]-->
+    <!--[if IE 7]><body class="ie7"><![endif]-->
+    <!--[if IE 8]><body class="ie8"><![endif]-->
+    <!--[if IE 9]><body class="ie9"><![endif]-->
+    <!--[if !IE]><!--><body><!--<![endif]-->
+	<div id="container">
