@@ -18,7 +18,7 @@
 
 5. 在本地完成js&css开发后需要在`gruntfile.js`里面部署配置（依赖配置在`package.json`的`alias`）
 
-6. 在项目的根目录执行 `grunt native` 完成静态文件的部署和打包，脚本样式部署到assets目录下
+6. 在项目的根目录执行 `grunt native` 完成静态文件的部署和打包，本地会产出一个assets的目录，脚本样式部署到这里
 
 7. 最后别忘记在本地测试ok提交代码哦~（提交前先`git fetch origin` `git diff master origin/master` 确认无误后再执行 `git merge origin/master`）
 
