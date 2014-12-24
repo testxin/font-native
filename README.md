@@ -4,7 +4,7 @@
 
 本地构建环境： `node v0.10.26` `npm 1.4.3` `grunt 0.4.5` `express3.18.4`
 
-**开始**
+##开始##
 
 ----
 
@@ -16,9 +16,9 @@
 
 4. 本地起一个node服务--`node app.js` 例如访问：http://localhost:3000就可以看到本地环境的页面效果
 
-5. 本地开发完成后在`gruntfile.js`里面配置静态文件（依赖配置在`package.json`的`alias`）
+5. 在本地完成js&css开发后需要在`gruntfile.js`里面部署配置（依赖配置在`package.json`的`alias`）
 
-6. 在项目的根目录执行 `grunt native` 完成静态文件的编译和打包，脚本样式部署到assets目录下
+6. 在项目的根目录执行 `grunt native` 完成静态文件的部署和打包，脚本样式部署到assets目录下
 
 7. 最后别忘记在本地测试ok提交代码哦~（提交前先`git fetch origin` `git diff master origin/master` 确认无误后再执行 `git merge origin/master`）
 
@@ -26,11 +26,11 @@
 
 ----
 
-- 每次对项目中的`js&css` 改动都需要执行`grunt enterprise`
+- 每次对项目中的`js&css` 改动都需要执行`grunt native`
 
 - 修改controllers下面的js文件需要重启node服务`node app.js`
 
-**Q&A**
+##Q&A##
 
 ----
 
@@ -56,7 +56,7 @@
 
 2.打开views/config/css.vm文件配置系统全局样式或者模块页面样式，配置脚本在views/config/js.vm方法类似
 
-**本地目录结构**
+##本地目录结构##
 
 ----
 
