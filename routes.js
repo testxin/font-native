@@ -20,5 +20,4 @@ module.exports = function(app) {
     // singleForm
     app.get('/mytest/singleForm', singleForm.form);
 
-
 };

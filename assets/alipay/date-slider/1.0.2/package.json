@@ -1,0 +1,28 @@
+{
+    "name": "date-slider",
+    "version": "1.0.2",
+    "description": "消费记录日期选择轴。",
+    "family": "alipay",
+    "keywords": [
+        "widget"
+    ],
+    "homepage": "http://arale.alipay.im/alipay/date-slider",
+    "author": "偏右 <xingmin.zhu@alipay.com>",
+    "repository": {
+        "type": "git",
+        "url": "http://git.alipay.im/alipay_date-slider"
+    },
+    "bugs": {
+        "url": "http://git.alipay.im/alipay_date-slider/issues"
+    },
+    "spm": {
+        "alias": {
+            "$": "$",
+            "widget": "arale/widget/1.0.3/widget",
+            "position": "arale/position/1.0.0/position",
+            "moment": "gallery/moment/1.6.2/moment",
+            "slider": "alipay/slider/1.1.1/slider"
+        },
+        "output": ["date-slider.js"]
+    }
+}

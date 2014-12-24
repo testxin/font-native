@@ -1,0 +1,18 @@
+{
+  "family": "alipay",
+  "name": "request",
+  "version": "0.9.0",
+  "description": "支付宝通用 Ajax 模块。",
+  "author": "Hsiaoming Yang",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/alipay-js/request"
+  },
+  "spm": {
+    "alias": {
+      "$": "$",
+      "cookie": "arale/cookie/1.0.2/cookie"
+    },
+    "output": ["request.js"]
+  }
+}
