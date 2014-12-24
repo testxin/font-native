@@ -1,1 +1,0 @@
-define("fdp/1.1.0/fdp-namespace",[],function(a,b,c){var d={};d.version="1.1.0",d.Form=void 0,d.FormItem=void 0,d.Paginator=void 0,d.DataTable=void 0,c.exports=d});
