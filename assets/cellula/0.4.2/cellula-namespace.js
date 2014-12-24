@@ -1,1 +1,0 @@
-define("cellula/0.4.2/cellula-namespace",[],function(a,b,c){var d={};d._cellula=d,d.version="0.4.1",d._util={},d.Class=void 0,d.Events=void 0,d.Cell=void 0,d.Element=void 0,d.Collection=void 0,c.exports=d});
