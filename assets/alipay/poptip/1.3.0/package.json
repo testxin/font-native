@@ -1,0 +1,27 @@
+{
+    "name": "poptip",
+    "version": "1.3.0",
+    "family": "alipay",
+    "description": "Poptip 是带有箭头和图标的浮层提示框，无须触发直接显示。",
+    "author": "pianyou <xingmin.zhu@alipay.com>",
+    "homepage": "http://aralejs.alipay.im/poptip",    
+    "repository": {
+        "type": "git",
+        "url": "http://git.alipay.im/alipay_poptip"
+    },
+    "bugs": {
+        "url": "http://git.alipay.im/alipay_poptip/issues"        
+    },
+    "spm": {
+    "alias": {
+        "$": "$",
+        "templatable":"arale/widget/1.0.3/templatable", 
+        "overlay": "arale/overlay/1.0.0/overlay",
+        "handlebars": "gallery/handlebars/1.0.0/handlebars",
+        "ui-poptip": "alice/poptip/1.0.0/poptip.css"
+    },
+    "output": [
+        "poptip.js"
+    ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "tip",
+    "version": "1.0.0",
+    "family": "arale",
+    "description": "基础提示框组件，用于带箭头的 hover 提示框显示和隐藏。",
+    "homepage": "http://aralejs.org/tip",
+    "author": "afc163 <afc163@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aralejs/tip.git"
+    },
+    "bugs": {
+        "url": "https://github.com/aralejs/tip/issues"
+    },
+    "license": "",
+    "spm": {
+    "alias": {
+        "$": "$",
+        "popup": "arale/popup/1.0.0/popup",
+        "ui-poptip": "alice/poptip/1.0.0/poptip.css"
+    },
+    "output": [
+        "tip.js",
+        "atip.js"
+    ]
+    }
+}
