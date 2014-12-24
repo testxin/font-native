@@ -33,3 +33,4 @@ exports.columnal = function(req, res) {
     
     res.render('index.vm', _.extend(conf, data, config));
 };
+

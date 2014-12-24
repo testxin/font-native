@@ -1,0 +1,60 @@
+<div class="summ-title">
+    <h1 class="ft-bold ft-14">$!mockdata.title</h1>
+</div>
+<form name="form" id="resumeForm" class="mi-form" method="post" action="/demo/" >
+<div class="mi-form-item" id="username">
+    <label class="mi-label"><span class="required">*</span>姓名</label>
+    <input type="text" name="batchId" value="" class="mi-input" />
+    <div class="mi-form-explain"></div>
+</div>
+<div class="mi-form-item" id="sex">
+    <label class="mi-label"><span class="required">*</span>性别</label>
+    <div class="mi-form-text">
+        <input type="radio" name="userSex" value="0" id="sex0" class="mi-radio" />
+        <label class="mi-radio-label" for="sex0">男</label>
+        <input type="radio" name="userSex" value="1" id="sex1" class="mi-radio" />
+        <label class="mi-radio-label" for="sex1">女</label>
+    </div>
+    <div class="mi-form-explain"></div>
+</div>
+<div class="mi-form-item" id="hobby">
+    <label class="mi-label">爱好</label>
+    <div class="mi-form-text">
+        <input type="checkbox" id="hobby0" name="userHobby" value="swiming" class="mi-checkbox" />
+        <label class="mi-radio-label" for="hobby0">游泳</label>
+        <input type="checkbox" id="hobby1" name="userHobby" value="climb" class="mi-checkbox" />
+        <label class="mi-radio-label" for="hobby1">爬山</label>
+    </div>
+    <div class="mi-form-explain"></div>
+</div>
+<div class="mi-form-item" id="type">
+    <label class="mi-label">
+        <span class="required">*</span>
+        类别
+    </label>
+    <div class="mi-form-text">
+        <select name="type">
+            <option value="" selected>请选择</option>
+            <option value="A">类别A</option>
+            <option value="B">类别B</option>
+            <option value="C">类别C</option>
+            <option value="D">类别D</option>
+        </select>
+    </div>
+    <div class="mi-form-explain"></div>
+</div>
+<div class="mi-form-item memo-item fn-mb20" id="memo">
+    <label class="mi-label">
+        备注
+    </label>
+    <textarea class="mi-textarea" style="height:50px" name="memo" data-maxlength="100"></textarea>
+    <div class="mi-form-explain">50个汉字，100个字符。</div>
+</div>
+<div class="mi-form-item">
+    <label class="mi-label">&nbsp;</label>
+				<span class="mi-button mi-button-morange">
+					<input type="submit" value="确 定" class="mi-button-text" />
+				</span>
+</div>
+
+</form>

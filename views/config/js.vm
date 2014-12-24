@@ -10,7 +10,8 @@
 	"global": [],
 	"mytest": {
 		"index": ["mytest/1.0.0/index.js"],
-		"columnal": []
+		"columnal": [],
+        "singleForm": ['mytest/1.0.0/singleForm.js']
 	}
 })
 #foreach($item in $js_file.entrySet())

@@ -5,8 +5,10 @@
     #parse("/mytest/index.vm")
 #elseif ($!__key == 'mytest/columnal')
 	#parse("/mytest/columnal.vm")
+#elseif ($!__key == 'mytest/singleForm')
+    #parse("/mytest/singleForm.vm")
 #else
-	##默认加载
+	##默认加载首页
     #parse("/main.vm")
 #end
 
