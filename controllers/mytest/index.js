@@ -22,7 +22,7 @@ exports.columnal = function(req, res) {
         title: '删格化布局演示',
         __key: 'mytest/columnal',
         __style: ui.inlineCss('mytest/columnal'),
-		__js: ''
+		__js: ui.inlineJs('mytest/columnal')
     },
     data = {
 		useColumnal: true,

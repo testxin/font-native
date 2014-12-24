@@ -13,5 +13,10 @@
 </div>
 ##配置js
 #parse('../config/js.vm')
+#if($!__js)
+	<script>
+		$!__js
+	</script>
+#end
 </body>
 </html>
