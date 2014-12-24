@@ -307,6 +307,8 @@ module.exports = function(grunt) {
 	        compress: {
 	             files: {
 	                 'assets/global/1.0.0/global.css': ['static/css/global/1.0.0/*.css'],
+	                 'assets/columnal/2.0/columnal.css': ['static/css/columnal/code/css/columnal.css'],
+	                 'assets/mytest/1.0.0/mytest.css': ['static/css/mytest/1.0.0/*.css']
 	             }
 	        }
      	},

@@ -7,11 +7,10 @@
 
 ##page js
 #set($js_file = {
+	"global": [],
 	"mytest": {
-		"test": "mytest/1.0.0/index.js",
-		"index": {
-			
-		}
+		"index": ["mytest/1.0.0/index.js"],
+		"columnal": []
 	}
 })
 #foreach($item in $js_file.entrySet())
@@ -19,10 +18,16 @@
 		#if($item.key == $__key.split('/').get(0))
 			## current module
     		#foreach($item2 in $item.value.entrySet())
-    			#if($__key.split('/').get(1) != $item2.key)<script charset="utf-8" src="/assets/$item2.value"></script>#end
-				#if($__key.split('/').get(1) == $item2.key)
+    			#if('global' == $item2.key)
+					## module global
 					#foreach($item3 in $item2.value.entrySet())
 						<script charset="utf-8" src="/assets/$item3.value"></script>
+					#end
+				#end
+				#if($__key.split('/').get(1) == $item2.key)
+					## page defined
+					#foreach($item4 in $item2.value.entrySet())
+						<script charset="utf-8" src="/assets/$item4.value"></script>
 					#end
 				#end
     		#end

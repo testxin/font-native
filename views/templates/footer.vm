@@ -1,8 +1,17 @@
+#if($useColumnal)
+	#parse("../../public/component/columnalSidebar.vm")
+#else
+	#parse("../../public/component/sidebar.vm")
+#end
+#if($useColumnal)</div>#end
 ##系统页脚
-#parse("../../public/component/footCommon.vm")
+#if($useColumnal)
+	#parse("../../public/component/columnalFootCommon.vm")
+#else
+	#parse("../../public/component/footCommon.vm")
+#end
 </div>
 ##配置js
 #parse('../config/js.vm')
-
 </body>
 </html>

@@ -1,3 +1,4 @@
-<div>
-	这里是页脚。。。
-	</div>
+<!-- the footer -->
+<div id="footer">
+	<p>here is the footer</p>
+</div>

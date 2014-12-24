@@ -10,8 +10,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>$!{title}</title>
         ## seajs配置本地化
-        <script charset="utf-8" type="text/javascript" src="/assets/sea.js"></script>
-        <script charset="utf-8" type="text/javascript" src="/assets/seajs-style/1.0.2/seajs-style.js"></script>
+        <script charset="utf-8" src="/assets/sea.js"></script>
+        <script charset="utf-8" src="/assets/seajs-style/1.0.2/seajs-style.js"></script>
         <script>
             seajs && seajs.config({
                 base : '/assets',
@@ -27,10 +27,21 @@
         <script src="/assets/$.js"></script>
     	##配置css
 		#parse('../config/css.vm')
+		#if($!__style)
+			<style>
+				$!__style
+			</style>
+		#end
     </head>
     <!--[if lt IE 7]><body class="ie6"><![endif]-->
     <!--[if IE 7]><body class="ie7"><![endif]-->
     <!--[if IE 8]><body class="ie8"><![endif]-->
     <!--[if IE 9]><body class="ie9"><![endif]-->
     <!--[if !IE]><!--><body><!--<![endif]-->
-	<div id="container">
+	<div id="wrapper"#if($useColumnal)class="container"#end>
+		#if($useColumnal)
+			#parse("../../public/component/columnalNav.vm")
+		#else
+			#parse("../../public/component/nav.vm")
+		#end
+		#if($useColumnal)<div class="row">#end

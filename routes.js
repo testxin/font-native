@@ -11,5 +11,6 @@ module.exports = function(app) {
     app.get('/', site.index);
     //mytest
     app.get('/mytest/', mytest.index);
-
+    // columnal
+    app.get('/mytest/columnal', mytest.columnal);
 };

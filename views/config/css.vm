@@ -9,9 +9,11 @@
 ##page css
 #set($css_file = {
 	"mytest": {
-		"index": {
-		
-		}
+		"global": [],
+		"index": ["mytest/1.0.0/mytest.css"],
+		"columnal" : [
+			"columnal/2.0/columnal.css"
+		]
 	}
 })
 #foreach($item in $css_file.entrySet())
@@ -19,10 +21,16 @@
 		#if($item.key == $__key.split('/').get(0))
 			## current module
     		#foreach($item2 in $item.value.entrySet())
-    			#if($__key.split('/').get(1) != $item2.key)<link charset="utf-8" rel="stylesheet" href="/assets/$item2.value" media="all" />#end
-				#if($__key.split('/').get(1) == $item2.key)
+    			#if('global' == $item2.key)
+					## module global
 					#foreach($item3 in $item2.value.entrySet())
 						<link charset="utf-8" rel="stylesheet" href="/assets/$item3.value" media="all" />
+					#end
+				#end
+				#if($__key.split('/').get(1) == $item2.key)
+					## page defined
+					#foreach($item4 in $item2.value.entrySet())
+						<link charset="utf-8" rel="stylesheet" href="/assets/$item4.value" media="all" />
 					#end
 				#end
     		#end

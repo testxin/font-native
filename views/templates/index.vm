@@ -3,6 +3,8 @@
 ##set($key = $!__key.split('/').get(1))
 #if($!__key == 'mytest/index')
     #parse("/mytest/index.vm")
+#elseif ($!__key == 'mytest/columnal')
+	#parse("/mytest/columnal.vm")
 #else
 	##默认加载
     #parse("/main.vm")

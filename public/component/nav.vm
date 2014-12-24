@@ -1,0 +1,12 @@
+<!-- the header and navigation -->
+<div id="header">
+	<div id="navigation">
+		<ul>
+			<li><a href="#">WHY?</a></li>
+			<li><a href="#">SYNOPSIS</a></li>
+			<li><a href="#">VIDEOS/CLIPS</a></li>
+			<li><a href="#">QUOTES</a></li>
+			<li><a href="#">QUIZ</a></li>
+		</ul>
+	</div>
+</div>

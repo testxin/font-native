@@ -1,5 +1,5 @@
-<div>
-	<h1>
-		你好，这是我的测试页面。。。
-    </h1>
+<!-- the content -->
+<div id="content">
+    <p>here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.here is the content.</p>
 </div>
+			
