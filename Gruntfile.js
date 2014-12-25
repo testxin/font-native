@@ -307,11 +307,17 @@ module.exports = function(grunt) {
 	        compress: {
 	             files: {
 	                 'assets/global/1.0.0/global.css': ['static/css/global/1.0.0/*.css'],
-	                 'assets/columnal/2.0/columnal.css': ['static/css/columnal/code/css/columnal.css'],
-	                 'assets/mytest/1.0.0/mytest.css': ['static/css/mytest/1.0.0/*.css']
+	                 'assets/columnal/2.0/columnal.css': ['static/css/columnal/code/css/columnal.css']
 	             }
 	        }
      	},
+        css_import: {
+            compress: {
+                files: {
+                    'assets/mytest/1.0.0/mytest.css': ['static/css/mytest/1.0.0/all_modules.css']
+                }
+            }
+        },
 		concat : {
 			options : {
 				paths : ['.']
@@ -353,6 +359,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-css-import');
 	//grunt.loadNpmTasks('grunt-contrib-nodeunit');
 	// grunt.loadNpmTasks('grunt-contrib-jshint');
 	// grunt.loadNpmTasks('grunt-contrib-watch');
@@ -362,6 +369,7 @@ module.exports = function(grunt) {
 		'transport',
 		'concat',
 		'cssmin',
+        'css_import',
 		'clean',
         'uglify'
 	]);
