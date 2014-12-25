@@ -7,8 +7,8 @@
 
 ##page js
 #set($js_file = {
-	"global": [],
 	"mytest": {
+        "global" : [],
 		"index": ["mytest/1.0.0/index.js"],
 		"columnal": [],
         "singleForm": ['mytest/1.0.0/singleForm.js']
