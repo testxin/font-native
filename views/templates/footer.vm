@@ -1,16 +1,19 @@
 #if($useColumnal)
 	#parse("../../public/component/columnalSidebar.vm")
+    </div><!--end row-->
+        #parse("../../public/component/columnalFootCommon.vm")
+        </div><!--end wrapper-->
+#elseif($!useFoundation)
+    ## Foundation ui default include jQuery 2
+    <script src="/assets/foundation/5.5.0/foundation.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 #else
-	#parse("../../public/component/sidebar.vm")
+    #parse("../../public/component/sidebar.vm")
+    #parse("../../public/component/footCommon.vm")
+    </div><!--end wrapper-->
 #end
-#if($useColumnal)</div>#end
-##系统页脚
-#if($useColumnal)
-	#parse("../../public/component/columnalFootCommon.vm")
-#else
-	#parse("../../public/component/footCommon.vm")
-#end
-</div>
 ##配置js
 #parse('../config/js.vm')
 #if($!__js)

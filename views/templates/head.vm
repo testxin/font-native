@@ -1,13 +1,14 @@
 #*
 @description: 系统头部
 *#
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html #if($!useFoundation)class="no-js"#end>
     <head>
         <meta charset="${charset}" />
         <meta name="keywords" content="$!keywords" />
         <meta name="description" content="$!description" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>$!{title}</title>
         ## seajs配置本地化
         <script charset="utf-8" src="/assets/sea.js"></script>
@@ -24,7 +25,12 @@
                 charset : 'utf-8'
             });
         </script>
-        <script src="/assets/$.js"></script>
+        #if($!useFoundation)
+            <link rel="stylesheet" href="/assets/foundation/5.5.0/foundation.css" />
+        #else
+            ## Default load jQuery 1.7.6 for global
+            <script src="/assets/$.js"></script>
+        #end
     	##配置css
 		#parse('../config/css.vm')
 		#if($!__style)
@@ -38,10 +44,11 @@
     <!--[if IE 8]><body class="ie8"><![endif]-->
     <!--[if IE 9]><body class="ie9"><![endif]-->
     <!--[if !IE]><!--><body><!--<![endif]-->
-	<div id="wrapper"#if($useColumnal)class="container"#end>
-		#if($useColumnal)
+    #if($useColumnal)
+        <div id="wrapper" class="container">
 			#parse("../../public/component/columnalNav.vm")
-		#else
-			#parse("../../public/component/nav.vm")
-		#end
-		#if($useColumnal)<div class="row">#end
+        	<div class="row">
+    #else
+        <div id="wrapper">
+        #parse("../../public/component/nav.vm")
+    #end
