@@ -30,7 +30,7 @@
 
 3. 在static/js/mytest/1.0.0下面建立一个singleForm.js就是页面对应的业务脚本，打开views/templates/index.vm入口模板增加一段逻辑判断
 
-    #elseif ($!__key == 'mytest/singleForm')
+        #elseif ($!__key == 'mytest/singleForm')
         #parse("/mytest/singleForm.vm")
 
 4. 在`gruntfile.js`里面新增样式脚本部署的相关配置（依赖配置在`package.json`的`alias`）
