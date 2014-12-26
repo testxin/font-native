@@ -41,7 +41,7 @@
 
 7. 修改`routes.js`加入页面访问的路由
 
-8. 项目根目录下执行`node app.js`访问`http://localhost:3000/mytest/foundation`
+8. 项目根目录下执行`node app.js`访问`http://localhost:3000/mytest/singleForm`
 
 **Tips**
 
