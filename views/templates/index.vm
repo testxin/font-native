@@ -7,6 +7,8 @@
 	#parse("/mytest/columnal.vm")
 #elseif ($!__key == 'mytest/singleForm')
     #parse("/mytest/singleForm.vm")
+#elseif ($!__key == 'mytest/foundation')
+    #parse("/mytest/foundation.vm")
 #else
 	##默认加载首页
     #parse("/main.vm")

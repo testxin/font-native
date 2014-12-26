@@ -4,6 +4,7 @@
         #parse("../../public/component/columnalFootCommon.vm")
         </div><!--end wrapper-->
 #elseif($!useFoundation)
+    </div>
     ## Foundation ui default include jQuery 2
     <script src="/assets/foundation/5.5.0/foundation.js"></script>
     <script>

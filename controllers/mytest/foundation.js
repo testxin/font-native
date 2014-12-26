@@ -1,3 +1,10 @@
+  /*
+   *  Foundation controller
+   */
+var _ = require('lodash');
+var config = require('../../config');
+var ui = require('../../ui');
+
 exports.index = function(req, res) {
     var conf = {
             title: '删格化布局演示',
