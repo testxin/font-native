@@ -51,6 +51,8 @@
 
 ##如何配置脚手架整合的ui library？##
 
+----
+
 在controllers层的nodejs文件中设置：
 
 **useColumnal: true** 加载columnal2.0
