@@ -307,7 +307,8 @@ module.exports = function(grunt) {
 	        compress: {
 	             files: {
 	                 'assets/global/1.0.0/global.css': ['static/css/global/1.0.0/*.css'],
-	                 'assets/columnal/2.0/columnal.css': ['static/css/columnal/code/css/columnal.css']
+	                 'assets/columnal/2.0/columnal.css': ['lib/columnal/code/css/columnal.css'],
+                     'assets/foundation/5.5.0/foundation.css': ['lib/foundation/5.5.0/css/normalize.css', 'lib/foundation/5.5.0/css/foundation.css']
 	             }
 	        }
      	},
@@ -319,22 +320,35 @@ module.exports = function(grunt) {
             }
         },
 		concat : {
-			options : {
-				paths : ['.']
-			},
 			cellula: {
+                options : {
+                    paths : ['.'],
+                    separator: ';'
+                },
 				files : {
 					'assets/cellula/0.4.2/cellula.js': ['assets/cellula/0.4.2/*.js']
 				}
 			},
 			fdp : {
+                options : {
+                    paths : ['.'],
+                    separator: ';'
+                },
 				files : {
 					'assets/fdp/1.0.0/fdp.js': ['assets/fdp/1.0.0/*.js'],
 					'assets/fdp/1.1.0/fdp.js': ['assets/fdp/1.1.0/*.js']
 				}
-			}
+			},
+            foundation : {
+                options : {
+                    noncmd: true
+                },
+                files: {
+                    'assets/foundation/5.5.0/foundation.js': ['lib/foundation/5.5.0/js/foundation/*.js', 'lib/foundation/5.5.0/js/vendor/*.js']
+                }
+            }
 		},
-		uglify : {
+        uglify : {
             options: {
                 mangle: true
             },
@@ -342,11 +356,11 @@ module.exports = function(grunt) {
                 files : [{
                     expand : true,
                     cwd : 'assets/',
-                    src : ['$.js', 'select/**/*.js', 'cellula/**/*.js', 'fdp/**/*.js', 'tinyscrollbar/**/*.js', 'money/**/*.js', 'deleter/**/*.js', 'common/**/*.js', 'mytest/**/*.js'],
+                    src : ['$.js', 'select/**/*.js', 'cellula/**/*.js', 'fdp/**/*.js', 'tinyscrollbar/**/*.js', 'money/**/*.js', 'deleter/**/*.js', 'foundation/5.5.0/foundation.js', 'common/**/*.js', 'mytest/**/*.js'],
                     dest : 'assets/'
                 }]
             }
-		},
+        },
 		clean : {
 			temp : ['arale', 'alipay', 'gallery', 'alice']
 		}
