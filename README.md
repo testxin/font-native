@@ -49,6 +49,16 @@
 
 - 修改controllers下面的js文件需要重启node服务`node app.js`
 
+##如何配置脚手架整合的ui library？##
+
+在controllers层的nodejs文件中设置：
+
+**useColumnal: true** 加载columnal2.0
+
+**useFoundation: true** 加载Foundation5.5.0
+
+具体可以参考`controllers/mytest/foundation.js`
+
 ##Q&A##
 
 ----
