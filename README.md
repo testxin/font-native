@@ -41,13 +41,25 @@
 
 7. 修改`routes.js`加入页面访问的路由
 
-8. 项目根目录下执行`node app.js`访问`http://localhost:3000/mytest/foundation`
+8. 项目根目录下执行`node app.js`访问`http://localhost:3000/mytest/singleForm`
 
 **Tips**
 
 - 每次对项目中的`js&css` 改动都需要执行`grunt native`
 
 - 修改controllers下面的js文件需要重启node服务`node app.js`
+
+##如何配置脚手架整合的ui library？##
+
+----
+
+在controllers层的nodejs文件中设置：
+
+**useColumnal: true** 加载columnal2.0
+
+**useFoundation: true** 加载Foundation5.5.0
+
+具体可以参考`controllers/mytest/foundation.js`
 
 ##Q&A##
 
