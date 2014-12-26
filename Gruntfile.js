@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 				files : [{
 					expand : true,
 					cwd : 'lib/',
-					src : ['$.js'],
+					src : ['$.js', '$-2.1.1.js'],
 					dest : 'assets'
 				}]
 			},
