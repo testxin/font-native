@@ -344,7 +344,7 @@ module.exports = function(grunt) {
                     noncmd: true
                 },
                 files: {
-                    'assets/foundation/5.5.0/foundation.js': ['lib/foundation/5.5.0/js/vendor/*.js', 'lib/foundation/5.5.0/js/foundation/*.js']
+                    'assets/foundation/5.5.0/foundation.js': ['lib/foundation/5.5.0/js/vendor/*.js', 'lib/foundation/5.5.0/js/foundation.js', 'lib/foundation/5.5.0/js/foundation/*.js']
                 }
             }
 		},

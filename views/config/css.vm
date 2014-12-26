@@ -1,6 +1,6 @@
 ## global css
 #set($css_global_file = {
-	"global": "global/1.0.0/global.css"
+
 })
 #foreach($item in $css_global_file.entrySet())
     <link charset="utf-8" rel="stylesheet" href="/assets/$item.value" media="all" />
@@ -10,7 +10,7 @@
 #set($css_file = {
 	"mytest": {
 		"global": [],
-		"index": ["mytest/1.0.0/mytest.css"],
+		"index": ["global/1.0.0/global.css", "mytest/1.0.0/mytest.css"],
 		"columnal" : [
 			"columnal/2.0/columnal.css"
 		]

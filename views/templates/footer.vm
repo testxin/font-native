@@ -6,6 +6,7 @@
 #elseif($!useFoundation)
     </div>
     ## Foundation ui default include jQuery 2
+    <script src="/assets/$-2.1.1.js"></script>
     <script src="/assets/foundation/5.5.0/foundation.js"></script>
     <script>
         $(document).foundation();
